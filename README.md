@@ -1,0 +1,1 @@
+- Mention needs to be run on linux, add instrucitons to install Nvidia Docker
