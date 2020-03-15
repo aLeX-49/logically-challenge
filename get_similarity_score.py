@@ -21,6 +21,7 @@ from utils import load_trained_tf_model, load_captioning_file_paths, \
               default='checkpoints')
 @click.option('--captioning_model_name', type=str, required=False,
               default='image_captioning_model')
+@click.option('--top_k', type=int, required=False, default=5000)
 def predict_on_image_and_text(
         image_path: str,
         text: str,
