@@ -73,4 +73,4 @@ def get_caption_from_image(
 
 
 if __name__ == '__main__':
-    predict_on_image_and_text()
+    print(predict_on_image_and_text())
