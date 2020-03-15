@@ -15,12 +15,12 @@ from utils import load_trained_tf_model, load_captioning_file_paths, \
 
 
 @click.command()
-@click.argument("image_path", type=str, required=True)
-@click.argument("text", type=str, required=True)
-@click.argument("captioning_model_save_dir", type=str, required=False,
-                default='checkpoints')
-@click.argument("captioning_model_name", type=str, required=False,
-                default='image_captioning_model')
+@click.option('--image_path', type=str, required=True)
+@click.option('--text', type=str, required=True)
+@click.option('--captioning_model_save_dir', type=str, required=False,
+              default='checkpoints')
+@click.option('--captioning_model_name', type=str, required=False,
+              default='image_captioning_model')
 def predict_on_image_and_text(
         image_path: str,
         text: str,
