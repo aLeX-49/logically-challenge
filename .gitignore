@@ -1,0 +1,8 @@
+# data folder
+data/*
+
+# MacOS
+.DS_Store
+
+# PyCharm
+.idea/
